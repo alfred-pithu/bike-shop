@@ -11,8 +11,17 @@
     color: #E76F51;
 }
 
+.featured-bikes-images{
+    width: 288px;
+    height:243px;
+}
+
 .grayscale{
     filter: grayscale(100);
+}
+
+.user-circle-photos{
+    width: 149px;
 }
 
 .fa-star{
