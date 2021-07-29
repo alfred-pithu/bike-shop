@@ -14,3 +14,11 @@
 .grayscale{
     filter: grayscale(100);
 }
+
+.fa-star{
+    color: #E77C40;
+}
+
+.regina-miles-color{
+    color: #23A6F0;
+}
