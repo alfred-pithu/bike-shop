@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/dom.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #secondBlog {
+            background-color: brown;
+        } */
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1026.0" data-gr-ext-installed="">
+    <header>
+        Welcome To my Blog Website
+    </header>
+    <main>
+        <section>
+            <article>
+                <h3>My Awesome Blog-1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At repellat asperiores libero facilis
+                    aspernatur officia a quae esse, molestias ratione ipsum modi voluptatibus. Asperiores voluptate eius
+                    cumque debitis veniam in!</p>
+            </article>
+            <article>
+                <h3 id="second-title">My Awesome Blog-2</h3>
+                <p>Labore itaque, voluptatum iusto a natus facilis minus assumenda praesentium illo maiores, cum rerum
+                    voluptate quam! Aut perspiciatis non sed, ut, officiis iusto amet voluptates at, rem aliquid eius
+                    nobis!</p>
+            </article>
+            <article>
+                <h3>My Awesome Blog-3</h3>
+                <p>Sit voluptates molestias officia exercitationem optio reprehenderit est? Ea itaque corrupti hic
+                    mollitia quis quasi quod ut, qui praesentium fugit amet ducimus voluptas enim culpa sequi suscipit
+                    unde rerum numquam.</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        const student = { name: 'kissmot', age: 16, height: 60 }
+        // console.log(document.body);
+
+        const blogTitles = document.getElementsByTagName('h3');
+        for (const h3 of blogTitles) {
+            // console.log(h3.innerText);
+        }
+
+        const blogDetails = document.getElementsByTagName('p')
+        for (const p of blogDetails) {
+            // console.log(p.innerText)
+        }
+    </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
